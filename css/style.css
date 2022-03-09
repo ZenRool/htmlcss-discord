@@ -1,5 +1,5 @@
 :root {
-    --height-section: 900px;
+    --height-section: 750px;
     --height-banner: 667px;
     --height-nav: 80px;
 }
@@ -36,6 +36,9 @@ a{
 .col{
 	float: left;
 }
+.col-rigth{
+	float: right;
+}
 /* .relative{
     position: relative;
 }
@@ -49,7 +52,7 @@ a{
     width: 80%;
     height: 60%;
     margin: 0 auto;
-    padding-top: 10%;
+    
     /* vertical-align: middle; */
     text-align: center;
     /* line-height: 667px; */
@@ -147,6 +150,10 @@ nav .col{
 	
 	color:white;
 }
+.jumb .container{
+    /* padding-top: 8%; */
+    padding-top: calc(var(--height-banner)/7);
+}
 h2{
     font-size: 4.5rem;
     padding-bottom: 3rem;
@@ -160,4 +167,41 @@ h2{
 }
 .jumb .buttons a:first-child{
     margin-right: 2rem;
+}
+/* MAIN  */
+/* gli section pari sono grigio chiaro */
+section{
+    height: var(--height-section);
+    width: 100%;
+    padding-top: calc(var(--height-section)/10);
+
+}
+main section:nth-child(even) {
+    background: #f6f6f6;
+}
+section .block-img{
+    /* background-image: url("../img/stars.svg"); */
+    width: 67%;
+    max-width: 800px;
+    max-height: 90%;
+    vertical-align: middle;
+}
+.block-img img{
+    text-align: left;
+}
+section .block-paragraf{
+    display: inline-block;
+    vertical-align: middle;
+    width: 33%;
+}
+section h3, section p{
+    text-align: left;
+}
+h3{
+    font-size: 3.5rem;
+    padding-bottom: 1em;
+}
+section p{
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
