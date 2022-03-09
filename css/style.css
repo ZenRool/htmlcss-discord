@@ -1,3 +1,8 @@
+:root {
+    --height-section: 900px;
+    --height-banner: 667px;
+    --height-nav: 80px;
+}
 /* RESET */
 * {
     padding: 0;
@@ -5,8 +10,99 @@
     box-sizing: border-box;
 }
 
-/* COMMON */
+/* COMMON and Utility*/
 html {
     font-family: "Whitney", sans-serif;
+    font-size: 100%;
+}
+.clearfix:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.container{
+    width: 99%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+.col{
+	float: left;
+}
+/* Buttons */
+[class$="btn"]{
+    border-radius: 30px;
+}
+[class$="btn"]:hover{
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.small-btn{
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+}
+.white-btn{
+    background-color: white;
+    color: #23272A;
+}
+.white-btn:hover{
+    color: #3161E0;
+}
+
+
+
+/* HEADER  */
+header{
+    background-color: #3161E0;
+}
+    /* NAV  */
+nav{
+    height: var(--height-nav);
+    color: white;
+}
+nav ul{
+    width: 70%;
+    text-align: center;
+    
+}
+nav li{
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 4%;
+}
+nav a {
+    color:inherit;
+    
+    font-weight: 600;
+    /*  */
+
+}
+nav li a:hover{
+    text-decoration: underline;
+}
+nav img{
+    height: 34px;
+    width: auto;
+    vertical-align: middle;
+
+}
+nav > div, nav li{
+    display: inline-block;
+    vertical-align: middle;
+}
+nav div:first-child{
+    width: 15%;
+}
+nav div:last-child{
+    width: 15%;
+    text-align: right;
+}
+nav .col{
+    
+    line-height: var(--height-nav);
 }
 
