@@ -40,15 +40,10 @@ a{
 .col-rigth{
 	float: right;
 }
-/* .relative{
-    position: relative;
+.v-aling-m{
+    display: inline-block;
+    vertical-align: middle;
 }
-.center-abs{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); 
-} */
 .center-margin{
     width: 80%;
     height: 60%;
@@ -108,7 +103,7 @@ nav ul{
     
 }
 nav li{
-    text-decoration: none;
+    list-style-type: none;
     font-size: 0.9rem;
     margin-left: 4%;
 }
@@ -233,6 +228,7 @@ main section:last-child {
 }
 h4{
     background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
     font-size: 2rem;
     width: 700px;
     margin: 0 auto;
@@ -245,4 +241,60 @@ main section:last-child .big-btn{
     text-align: center;
 
     
+}
+/* Footer */
+
+footer{
+    background-color: #232323;
+    padding-top: 5rem;
+    color: white;
+}
+footer img{
+    height: 1em;
+    width: auto;
+    vertical-align: middle;
+}
+h5{
+    color: #4171F6;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    
+}
+h6{
+    text-align: left;
+    color: #4171F6;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding-bottom: 0.8rem;
+
+}
+footer a{
+    color: inherit;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 0.8rem;
+}
+
+footer .col{
+
+    /* width: calc(17%-30px);
+    padding-right: 30px; */
+    /* width: 100%; */
+    width: 17%;
+    padding-left: 3%;
+
+}
+footer .col:first-child{
+
+    /* width: calc(33%-5em); */
+    width: 32%;
+    padding-right: 8%;
+    padding-left: 0;
+    
+}
+footer li{
+    list-style-type: none;
+    font-weight: 600;
 }
