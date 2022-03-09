@@ -24,6 +24,8 @@ html {
     width: 99%;
     max-width: 1300px;
     margin: 0 auto;
+
+    height: 100%;
 }
 img{
 	width: 100%;
@@ -34,20 +36,47 @@ a{
 .col{
 	float: left;
 }
+/* .relative{
+    position: relative;
+}
+.center-abs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+} */
+.center-margin{
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    padding-top: 10%;
+    /* vertical-align: middle; */
+    text-align: center;
+    /* line-height: 667px; */
+}
 /* Buttons */
 [class$="btn"]{
     border-radius: 30px;
+    /* display: inline-block; */
 }
 [class$="btn"]:hover{
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 .small-btn{
     padding: 0.4rem 0.7rem;
     font-size: 0.8rem;
 }
+.big-btn{
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+}
 .white-btn{
     background-color: white;
     color: #23272A;
+}
+.black-btn{
+    background-color: #23272A;
+    color: white;
 }
 .white-btn:hover{
     color: #3161E0;
@@ -105,4 +134,30 @@ nav .col{
     
     line-height: var(--height-nav);
 }
-
+/* Fine Header  */
+/* JumboBanner */
+.jumb{
+    height: var(--height-banner);
+    width: 100%;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	
+	color:white;
+}
+h2{
+    font-size: 4.5rem;
+    padding-bottom: 3rem;
+}
+.jumb p{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.jumb .buttons{
+    padding-top: 3rem;
+}
+.jumb .buttons a:first-child{
+    margin-right: 2rem;
+}
