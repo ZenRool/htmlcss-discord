@@ -2,6 +2,7 @@
     --height-section: 750px;
     --height-banner: 667px;
     --height-nav: 80px;
+    --height-last-section: 1300px;
 }
 /* RESET */
 * {
@@ -83,6 +84,11 @@ a{
 }
 .white-btn:hover{
     color: #3161E0;
+}
+.blue-btn{
+    background-color: rgba(65, 113, 240,0.6);
+    color: white;
+
 }
 
 
@@ -204,4 +210,39 @@ h3{
 section p{
     font-size: 1.5rem;
     line-height: 2rem;
+}
+/* Ultima section diversa dalle altre */
+main section:last-child .block-paragraf p,main section:last-child .block-paragraf h3, h4{
+    text-align: center;
+    display: block;
+
+}
+main section:last-child .block-paragraf{
+    display: block;
+    /* vertical-align: middle; */
+    width: 100%;
+}
+main section:last-child .block-img{
+    display: block;
+    /* vertical-align: middle; */
+    width: 100%;
+    max-width: none;
+}
+main section:last-child {
+    height: var(--height-last-section);
+}
+h4{
+    background-image: url("../img/stars.svg");
+    font-size: 2rem;
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 2.5rem;
+}
+main section:last-child .big-btn{
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+
+    
 }
