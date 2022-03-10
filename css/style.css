@@ -178,7 +178,8 @@ section{
     padding-top: 80px;
 
 }
-main section:nth-child(even) {
+/* main section:nth-child(even) {< */
+main .evens{
     background: #f6f6f6;
 }
 section .block-img{
@@ -304,4 +305,12 @@ footer li{
 }
 #footer-two .blue-btn{
     font-weight: 600;
+}
+/* Wave */
+.wave img{
+    display: block;
+}
+.rotate img{
+    transform: rotate(180deg);
+    margin-top: -4px;
 }
