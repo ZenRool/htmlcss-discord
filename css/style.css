@@ -1,8 +1,5 @@
 :root {
-    --height-section: 750px;
-    --height-banner: 667px;
     --height-nav: 80px;
-    --height-last-section: 1300px;
 }
 /* RESET */
 * {
@@ -23,7 +20,7 @@ html {
 }
 .container{
     width: 99%;
-    max-width: 1300px;
+    max-width: 1280px;
     margin: 0 auto;
 
     height: 100%;
@@ -148,19 +145,16 @@ nav .col{
 /* Fine Header  */
 /* JumboBanner */
 .jumb{
-    height: var(--height-banner);
+    /* height: var(--height-banner); */
     width: 100%;
     background-image: url("../img/jumbo.png");
     background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	
+	padding-top: 100px;
+    padding-bottom: 200px;
 	
 	color:white;
-}
-.jumb .container{
-    /* padding-top: 8%; */
-    padding-top: calc(var(--height-banner)/7);
 }
 h2{
     font-size: 4.5rem;
@@ -179,9 +173,9 @@ h2{
 /* MAIN  */
 /* gli section pari sono grigio chiaro */
 section{
-    height: var(--height-section);
+    padding-bottom: 80px;
     width: 100%;
-    padding-top: calc(var(--height-section)/10);
+    padding-top: 80px;
 
 }
 main section:nth-child(even) {
@@ -230,9 +224,7 @@ main section:last-child .block-img{
     width: 100%;
     max-width: none;
 }
-main section:last-child {
-    height: var(--height-last-section);
-}
+
 h4{
     background-image: url("../img/stars.svg");
     background-repeat: no-repeat;
