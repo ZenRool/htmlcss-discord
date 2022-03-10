@@ -28,6 +28,7 @@ html {
 
     height: 100%;
 }
+
 img{
 	width: 100%;
 }
@@ -77,13 +78,19 @@ a{
     background-color: #23272A;
     color: white;
 }
+.blue-btn{
+    background-color: #5191FF;
+    color: white;
+
+}
 .white-btn:hover{
     color: #3161E0;
 }
-.blue-btn{
-    background-color: rgba(65, 113, 240,0.6);
-    color: white;
-
+.blue-btn:hover{
+    background-color: #7FBFFF ;
+}
+.black-btn:hover{
+    background-color: #2A2E32 ;
 }
 
 
@@ -249,7 +256,7 @@ footer{
     padding-top: 5rem;
     color: white;
 }
-footer img{
+#footer-one img{
     height: 1em;
     width: auto;
     vertical-align: middle;
@@ -270,7 +277,7 @@ h6{
     padding-bottom: 0.8rem;
 
 }
-footer a{
+#footer-one a{
     color: inherit;
     display: inline-block;
     margin-top: 1rem;
@@ -279,9 +286,6 @@ footer a{
 
 footer .col{
 
-    /* width: calc(17%-30px);
-    padding-right: 30px; */
-    /* width: 100%; */
     width: 17%;
     padding-left: 3%;
 
@@ -296,5 +300,16 @@ footer .col:first-child{
 }
 footer li{
     list-style-type: none;
+    font-weight: 600;
+}
+/* Footer two */
+#footer-two{
+    padding: 3rem 0;
+}
+#footer-two img{
+    height: 100%;
+    width: auto;
+}
+#footer-two .blue-btn{
     font-weight: 600;
 }
